@@ -1,6 +1,6 @@
 <template>
-  <div class="app-container">
-    <el-button class="filter-item" style="position:absolute;right: 20px; top:-20px" type="primary" icon="el-icon-plus" @click="handleCreate">
+  <div class="">
+    <el-button class="filter-item" style="" type="primary" icon="el-icon-plus" @click="handleCreate">
       增加
     </el-button>
     <el-table
@@ -13,13 +13,13 @@
       highlight-current-row
       style="width: 100%;"
     >
-      <el-table-column label="FilePath" min-width="150px">
+      <el-table-column label="FilePath" min-width="300px" style="padding: 0">
         <template slot-scope="{row}">
           <span class="link-type" @click="handleUpdate(row)">{{ row.filepath }}</span>
         </template>
 
       </el-table-column>
-      <el-table-column label="Actions" align="center" width="230" class-name="small-padding fixed-width">
+      <el-table-column label="Actions" align="center" width="230" class-name="fixed-width" style="padding: 0">
         <template slot-scope="{row,$index}">
           <el-button type="primary" size="mini" @click="handleUpdate(row)">
             编辑

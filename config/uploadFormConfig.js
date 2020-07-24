@@ -112,7 +112,7 @@ export const uploadFormConfig = {
       text: '文件目录',
       type: 'customize',
       width: 350,
-      columns: 1
+      columns: 2
     }
     ],
   _rules: {
